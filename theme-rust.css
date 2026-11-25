@@ -1,0 +1,36 @@
+/* Reversible palette overlay. Remove this stylesheet link from index.html and
+   sign-space.html to restore the original green palette; base styles are intact. */
+:root{--ink:#221e1b;--paper:#faf4eb;--muted:#71645b;--line:#ded0c2;--lime:#ffb16b;--rust:#a44121;--orange:#f18a3b}
+body{background:var(--paper);color:var(--ink)}
+h1 em{color:var(--rust)}
+.mark i{background:var(--rust)}
+.eyebrow:before{background:var(--orange)}
+.button{background:var(--rust);color:#fff8f0}
+.button:hover{background:#823218}
+.number,.stack-label,.benefits span{color:#826654}
+.scene{background:#ead8c2}
+.property-grid article{background:#f0e5d7}
+.sign-detail{background:#fffbf5}
+.sign-choice[aria-pressed=true],.sign-choice:hover{background:#f5dfca}
+.panel-slot{background:#eee5da;color:#716359;border-color:#dfd1c1}
+.panel-slot.vacant{background:#ffb16b;color:#221e1b;border-color:#bc6831}
+a.panel-slot:hover{background:#f69a4e}
+.full-message{background:#eee5da}
+.pin-label{background:#2a2420;color:#fff8f0;border-color:#fff8f0}
+.pin-full .pin-label{background:#786b60}
+.sign-pin.selected .pin-label{background:#ffb16b;color:#221e1b;border-color:#79331d}
+.pin-leader path{stroke:#79331d}
+.pin-dot{background:#79331d;border-color:#fff8f0}
+#sign-map{background:#eadfce}
+#sign-map .leaflet-control button{color:#221e1b!important;border-color:#cfb6a1!important;background:#fffaf2!important}
+.selection{background:#f4dfc9;border-left-color:var(--rust)}
+.contact:not(.next .contact),.next{background:#221e1b;color:#fff4e8}
+.contact .eyebrow,.next .eyebrow{color:#ffb16b}
+.contact p,.next p:not(.eyebrow){color:#e0cbb9}
+.contact small{color:#d9bea7}
+.contact-box{border-color:#806b5b}
+.contact-box a:hover{color:#ffb16b}
+.next .contact{background:transparent}
+.next .contact .button{background:#ffb16b;color:#221e1b}
+.next .contact .button:hover{background:#f69a4e}
+a:focus-visible,.sign-detail button:focus-visible,.sign-choice:focus-visible,.sign-pin:focus-visible .pin-label,a.panel-slot:focus-visible{outline-color:#a44121}
